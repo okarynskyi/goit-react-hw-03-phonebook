@@ -69,6 +69,14 @@ export class App extends Component {
     return filteredContacts
   }
 
+  componentDidMount() {
+    console.log('mount')
+  }
+
+  componentDidUpdate() {
+    console.log('upd')
+  }
+
   render() {
     const { addContact, removeContact, handleChange } = this;
     const { filter } = this.state;
